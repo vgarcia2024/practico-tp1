@@ -1,0 +1,29 @@
+.us-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.team-card {
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+}
+
+.team-card h2 {
+    margin-bottom: 0.4rem;
+}
+
+.team-card h5 {
+    margin-bottom: 0.4rem;
+    color: #e7724f;
+}

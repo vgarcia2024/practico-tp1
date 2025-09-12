@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-header-bg: #fff8f0;
+  --color-text: #40210f;
+  --color-accent: #e97451;
+  --color-button-gray: #888888;
+  --color-input-bg: #fff3e6;
+  --color-border: #c6a57b;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  list-style: none;
+  text-decoration: none;
+}
