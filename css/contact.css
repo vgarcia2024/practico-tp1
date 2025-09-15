@@ -90,13 +90,13 @@ textarea {
 
   .form-card {
     width: 100%;
-    height: auto; /* que se adapte al contenido */
+    height: auto;
     padding: 1rem;
     box-sizing: border-box;
   }
 
   label {
-    flex-direction: column; /* para que las etiquetas e inputs queden apilados */
+    flex-direction: column;
     align-items: flex-start;
   }
 

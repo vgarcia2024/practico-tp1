@@ -406,6 +406,10 @@ footer {
     font-size: 1rem;
   }
 
+  .card-text button {
+    color: black;
+  }
+
   .cards-sweet {
     flex-direction: column;
     gap: 1rem;
