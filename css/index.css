@@ -491,6 +491,7 @@ footer {
   cursor: pointer;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
