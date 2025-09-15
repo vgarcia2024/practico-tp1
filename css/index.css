@@ -369,7 +369,7 @@ footer {
 
   .navbar-right button:last-of-type,
   .navbar-right button:first-of-type {
-    display: none;
+    display: block;
   }
 
   .navbar-right button {
