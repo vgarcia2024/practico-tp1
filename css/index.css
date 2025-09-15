@@ -364,10 +364,11 @@ footer {
     flex: 1 1 200px;
   }
 
-  .navbar-right button:last-of-type, .navbar-right button:first-of-type, input[type=search] {
+  .navbar-right button:last-of-type,
+  .navbar-right button:first-of-type {
     display: none;
   }
-  
+
   .navbar-right button {
     flex: 1 1 140px;
     padding: 0.4rem 0;
