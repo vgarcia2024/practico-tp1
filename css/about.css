@@ -1,29 +1,90 @@
+.navbar-right .contact {
+  color: white;
+}
+
 .us-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .team-card {
-    width: 350px;
-    height: 300px;
-    text-align: center;
-    border: 1px solid rgb(199, 199, 199);
-    border-radius: 6px;
-    padding: 15px;
+  width: 350px;
+  min-height: 300px;
+  text-align: center;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 6px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(64, 33, 15, 0.1);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(64, 33, 15, 0.2);
 }
 
 .team-card p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .team-card h2 {
-    margin-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
+  color: #40210f;
+  font-family: sans-serif;
 }
 
 .team-card h5 {
-    margin-bottom: 0.4rem;
-    color: #e7724f;
+  margin-bottom: 0.4rem;
+  color: #e7724f;
+}
+
+.our-team {
+  background-color: var(--color-header-bg);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 2rem;
+  letter-spacing: 1.2px;
+  box-shadow: 0 4px 8px rgba(64, 33, 15, 0.1);
+}
+
+.our-team h2 {
+  font-size: 2rem;
+  font-family: "Times New Roman";
+  margin-bottom: 1rem;
+}
+
+/* RESPONSIVE / MEDIAS */
+
+@media (max-width: 480px) {
+  .us-card {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .team-card {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .our-team {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .team-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .team-card p {
+    font-size: 0.85rem;
+  }
 }

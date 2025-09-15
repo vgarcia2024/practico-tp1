@@ -1,6 +1,21 @@
+.details {
+  color: var(--color-text);
+}
+
+.detalle {
+  color: white;
+}
+
+.detalle1 {
+  color: black;
+}
+
+.detalle1:hover {
+  color: white;
+}
+
 .encabezado {
   background-color: var(--color-header-bg);
-  padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -14,9 +29,9 @@
   justify-content: space-between;
 }
 
-.logo-img h1 {
-  color: var(--color-accent);
-  font-style: italic;
+.logo-img img {
+  width: 150px;
+  height: 100px;
 }
 
 .navbar-right {
@@ -55,6 +70,10 @@
   gap: 1rem;
   margin: 0;
   padding: 0;
+}
+
+.navbar-right .contact {
+  color: white;
 }
 
 /* BOTONES */
@@ -96,11 +115,23 @@
 .card h3 {
   font-size: 2rem;
   color: #40210f;
+  font-family: sans-serif;
+  animation: moveUp 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(-4px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
 }
 
 .card p {
   color: #5a3e1b;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .card img {
@@ -150,6 +181,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.card-rico:hover {
+  transform: translateY(-4px);
+  transform: scale(1.06);
 }
 
 .card-rico img {
@@ -287,15 +324,118 @@ footer {
 }
 
 .flex-footer h4 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .flex-footer a {
-    color: #f3f3f3;
+  color: #f3f3f3;
 }
 
 .flex-footer ul {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* MEDIA */
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .logo-img img {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .navbar-right input[type="search"] {
+    flex: 1 1 200px;
+  }
+
+  .navbar-right button {
+    flex: 1 1 140px;
+    padding: 0.4rem 0;
+  }
+
+  .navbar-right ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 90vw;
+    max-width: 380px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .cards-sweet {
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 1rem;
+  }
+
+  .card-rico {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .card-history {
+    padding: 1rem;
+  }
+
+  .card-history h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-history p {
+    font-size: 0.85rem;
+  }
+
+  .card-history button {
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  .card-pedido {
+    height: auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .flex-footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

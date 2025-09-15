@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="header-container">
+        <div class="logo-img">
+          <img src="../img/logo-pg.png" alt="" />
+        </div>
+
+        <nav class="navbar-right" aria-label="Menú principal">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/servicios.html">Servicios</a></li>
+            <li><a href="../pages/about.html">Equipo</a></li>
+            <li><a href="../pages/contact.html">Contacto</a></li>
+          </ul>
+
+          <input type="search" placeholder="Buscar..." aria-label="Buscar" />
+          <button type="button">Llámanos</button>
+          <button type="button">
+            <a href="./pages/contact.html" class="contact">Contacto</a>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <article class="us-form">
+          <h2>¡Nos encantaría saber de vos!</h2>
+          <p>
+            Si tenes alguna pregunta, comentario o simplemente querés saludar,
+            no dudes
+          </p>
+          <p>en contactarnos. Tu opinión es muy valiosa para nosotros.</p>
+        </article>
+
+        <article class="form-card">
+          <div>
+            <h4>Contáctanos</h4>
+            <form action="">
+              <div class="form-adjust">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Tu nombre (Ej: Juan Pérez)"
+                  required
+                />
+              </div>
+
+              <div class="form-adjust">
+                <label for="correo">Correo Electrónico</label>
+                <input
+                  type="email"
+                  name="correo"
+                  id="correo"
+                  placeholder="tu.email@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="form-adjust">
+                <label for="telefono">Teléfono (Opcional)</label>
+                <input
+                  type="number"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="+54 9 (336) 123-4567"
+                  required
+                />
+              </div>
+
+              <div class="form-adjust">
+                <label for="asunto">Asunto</label>
+                <input
+                  type="text"
+                  name="asunto"
+                  id="asunto"
+                  placeholder="Consulta sobre productos, pedidos..."
+                  required
+                />
+              </div>
+
+              <div class="form-adjust">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="btn">
+                <button type="button">Enviar Mensaje</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>Delicias de repostería artesanal</p>
+        <p>hechas con amor y los mejores</p>
+        <p>ingredientes.</p>
+      </div>
+
+      <div class="flex-footer">
+        <div>
+          <h4>DulceMiga</h4>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Equipo</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a href="">Acerca de Nosotros</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="">Preguntas Frecuentes</a></li>
+            <li><a href="">Servicio al Cliente</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
