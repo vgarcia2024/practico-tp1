@@ -17,6 +17,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(64, 33, 15, 0.1);
 }
 
 .discover-off h2 {
@@ -80,6 +81,7 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   padding-bottom: 3.5rem;
+  box-shadow: 0 4px 8px rgba(64, 33, 15, 0.1);
 }
 
 .cakes-type img {
