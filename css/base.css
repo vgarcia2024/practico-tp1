@@ -18,3 +18,14 @@
   list-style: none;
   text-decoration: none;
 }
+
+body {
+  opacity: 0;
+  animation: fadeInBody 1.5s forwards;
+}
+
+@keyframes fadeInBody {
+  to {
+    opacity: 1;
+  }
+}
