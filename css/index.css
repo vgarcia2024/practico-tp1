@@ -342,7 +342,7 @@ footer {
 
 /* MEDIA */
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .header-container {
     flex-wrap: wrap;
     justify-content: center;
@@ -365,7 +365,8 @@ footer {
   }
 
   .navbar-right button:last-of-type,
-  .navbar-right button:first-of-type {
+  .navbar-right button:first-of-type
+ {
     display: none;
   }
 
@@ -383,6 +384,8 @@ footer {
   .card {
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .card img {
